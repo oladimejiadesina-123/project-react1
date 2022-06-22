@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+// import Footer from './Footer/Footer';
+// import Header from './Header/Header';
+import Counter from './project/Counter';
+// import BirthdayRemembrance from './project/BirthdayRemembrance';
+// import data from './Data/data'
+
 
 function App() {
+  // const [people, setPeople] = useState(data)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Counter />
+      {/* <section>
+      <h3>{people.length} birthdays today</h3>
+      <BirthdayRemembrance people={people}/>
+      <button onClick={() => setPeople([])}>clear all</button>
+      </section> */}
     </div>
   );
 }

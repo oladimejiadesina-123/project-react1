@@ -1,0 +1,45 @@
+.header-nav {
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+.header-div-logo {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+img.header_logo {
+    width: 140px;
+}
+.header_div_input {
+    display: flex;
+}
+form.header_div_two {
+    position: relative;
+    display: flex;
+}
+input[type="text"] {
+    flex-grow: 1;
+    width: 550px;
+    padding: 10px;
+    border-radius: 5px;
+}
+button.header_input_btn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    outline: none;
+    background-color: #f68b1e;
+}
+button.header_input_btn:hover {
+    background-color: rgb(246, 139, 30);  
+} 
+.header_cart, .header_help, .header_login {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-left: 10px;
+}
+svg, i.far.fa-question-circle {
+    font-size: 20px;
+}
