@@ -1,40 +1,19 @@
-import React, {  useState, useEffect } from 'react';
+import React from 'react'
+import Review from './Reviews/Review';
 
-
-
-const url = 'https://jsonplaceholder.typicode.com/comments'
 
 function App() {
-  const [names, setNames] = useState([])
-
-  const fetchTours = async () => {
-
-    try {
-      const response = await fetch(url)
-      const names = await response.json()
-      setNames(names)
-      console.log(response)
-    } catch (error) {
-      console.log(error)
-    }
-  }
-  useEffect(() => {
-    fetchTours()
-  }, [])
-const nameList = names.map((name) =>
-<div className='center'>
-
-  <li>{name.name}</li>
-  <li>{name.email}</li>
-</div>
-
-)
-
-
-  return(
-    <ul>{nameList}</ul>
-  )
-
+  return (
+    <main>
+      <section className='container'>
+        <div className='title'>
+          <h2>our reviews</h2>
+          <div className='underline'></div>
+        </div>
+        <Review />
+      </section>
+    </main>
+  );
 }
 
 export default App;
